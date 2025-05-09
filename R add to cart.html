@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display:flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 30px;
+        }
+        .card{
+            border:1px solid black;
+            padding:20px;
+            width:200px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        button{
+            background-color: greenyellow;
+            color: black;
+            padding: 8px 16px;
+            border:none;
+            margin-top:10px;
+            cursor:pointer;
+        }
+        button:hover{
+            background-color: darkseagreen;
+        }
+        img{
+            height:150px;
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Products</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/action-figure/6/f/z/3-batman-bubble-head-for-desk-and-car-dashboard-thepartybooster-original-imah9hh9yu4rgp8h.jpeg?q=70"
+                alt="" />
+            <h3>BatMan</h3>
+            <p>Price:$25</p>
+            <button onclick="addToCart('BatMan',25)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/612/612/kpvivm80/plant-container-set/t/o/h/2-euro-hanging-basket-9-inch-multi-color-pack-of-2-growtop-original-imag4yhzmgzsvmhe.jpeg?q=70"
+                alt="" />
+            <h3>Ramanuj Flower Baskets</h3>
+            <p>Price:$150</p>
+            <button onclick="addToCart('Ramanuj Flower Baskets',150)">Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/scooter-moped/i/0/p/-original-imah58qgwaagmhvb.jpeg?q=90"
+                alt="" />
+            <h3>TVS XL100 </h3>
+            <p>Price:$564.99</p>
+            <button onclick="addToCart('TVS XL100',564.99)">Add to Cart</button>
+        </div>
+    </div>
+    <div style="text-align: center">
+        <a href="cart.html">Go to cart</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
